@@ -1,0 +1,17 @@
+# Generated data and experiment outputs
+data/*
+results/*
+!data/.gitkeep
+!results/.gitkeep
+
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local raw archives and logs
+*.gz
+*.zip
+*.log
