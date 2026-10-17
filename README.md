@@ -1,6 +1,6 @@
 # Tox21 Scaffold Reproducibility
 
-Code for reproducible multi-task molecular toxicity prediction on Tox21. The repository follows a compact research-code layout: data preparation, training, baselines, and result aggregation are kept at the project root; generated data and results are ignored.
+Code and experiment assets for reproducible multi-task molecular toxicity prediction on Tox21. The repository follows a compact research-code layout: data preparation, training, baselines, checkpoints, and result aggregation are kept in the project tree.
 
 ## Contents
 
@@ -13,7 +13,7 @@ Code for reproducible multi-task molecular toxicity prediction on Tox21. The rep
 - `aggregate_baselines.py` and `summarize_dmpnn_results.py` aggregate multi-seed results.
 - `requirements-dmpnn.txt` and `requirements-baselines.txt` define the environments.
 
-The raw dataset, split CSV files, model checkpoints, result tables, figures, papers, reports, and reviewer materials are intentionally not committed.
+The repository includes the raw dataset, split CSV files, selected model checkpoints, and result tables used by the experiments. Figures, papers, reports, and reviewer materials are kept outside this code repository.
 
 ## Reproduction
 
@@ -37,7 +37,7 @@ python make_tox21_scaffold_split.py
 python run_dmpnn_scaffold.py --seeds 42 43 44 45 46
 ```
 
-The scripts write generated files under `data/` and `results/`, which are ignored by Git. Use an NVIDIA CUDA-enabled PyTorch build when available; CPU execution remains supported.
+The scripts write generated files under `data/` and `results/`. Use an NVIDIA CUDA-enabled PyTorch build when available; CPU execution remains supported.
 
 ## Dataset provenance
 
